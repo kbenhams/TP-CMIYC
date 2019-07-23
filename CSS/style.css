@@ -1,0 +1,86 @@
+.container{
+margin: 40px;
+}
+.container-start{
+    border: 2px black solid;
+    background-color: yellow;
+    text-align: center;
+    font-size: 30px;
+    line-height: 70px;
+    cursor: grabbing;
+}
+#jeu{
+    background-color: black;
+    width: 1000px;
+    height: 600px;
+    margin-top: 40px;
+    float: left;
+}
+#rotating{
+    position: relative;
+    border: 2px black solid;
+    background-color: #00ffea;
+    width: 90px;
+    line-height: 25px;
+    text-align: center;
+    animation: rotating 0s linear infinite;
+    cursor: pointer;
+}
+@keyframes rotating { 
+    from { 
+        -webkit-transform: rotate(0deg); 
+    } to { 
+        -webkit-transform: rotate(360deg); 
+    }
+}
+.container-score{
+    background-color: greenyellow;
+    margin: 40px 60px;
+    width: 300px;
+    height: 600px;
+    float: left;
+}
+.box{
+    width: 250px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px black solid;
+    margin: 10px 25px;  
+    font-size: 20px;
+    line-height: 30px; 
+}
+.users{
+    position: relative;
+}
+.users:hover .date{
+    display: block;
+}
+.date{
+    width: 66px;
+    height: 22px;
+    border: 1px black solid;
+    background-color: white;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    text-align: center;
+}
+#hightscore{
+    height: 85px;
+    overflow: auto;
+}
+.box-last{
+    width: 250px;
+    height: 115px;
+    background-color: #ffffff;
+    border: 1px black solid;
+    margin: 10px 25px;  
+    font-size: 20px;
+    line-height: 30px; 
+}
+
+.clear{
+    clear: both
+}
